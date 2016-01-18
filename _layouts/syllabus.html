@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+  <body class="course-page">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- course info -->
+    <header class="course-page">
+      {% include info.html %}
+    </header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article id="syllabus">
+          <section>
+            {{ content }}
+          </section>
+        </article>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+
+  </body>
+
+</html>
