@@ -1,0 +1,1028 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.grid, header, footer, div.header, nav#front-nav, main#teaching-page, dl.papers, main#personal-page {
+  letter-spacing: -4px;
+  text-rendering: optimizespeed; }
+
+header.front-page #picture, header.innerPage #name {
+  width: 50%;
+  padding: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  text-align: left; }
+  @media (max-width: 786px) {
+    header.front-page #picture, header.innerPage #name {
+      width: 100%; } }
+
+header.front-page #info, header.innerPage #contact {
+  width: 50%;
+  padding: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  text-align: right; }
+  @media (max-width: 786px) {
+    header.front-page #info, header.innerPage #contact {
+      width: 100%; } }
+
+main#teaching-page section#courses section#current-courses, main#teaching-page section#courses section#previous-courses {
+  width: 48%;
+  margin: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+  @media (max-width: 786px) {
+    main#teaching-page section#courses section#current-courses, main#teaching-page section#courses section#previous-courses {
+      width: 100%; } }
+
+nav#front-nav section {
+  width: 31.33333%;
+  margin: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+  @media (max-width: 786px) {
+    nav#front-nav section {
+      width: 100%; } }
+
+dl.papers dt {
+  width: 14.66667%;
+  margin: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+  @media (max-width: 786px) {
+    dl.papers dt {
+      width: 100%; } }
+
+dl.papers dd {
+  width: 81.33333%;
+  margin: 0 1%;
+  /*@if $last_column == true {
+    padding-right: 0;
+    } @else {
+      padding-right: 20px;
+    }*/
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+  @media (max-width: 786px) {
+    dl.papers dd {
+      width: 100%; } }
+
+ul.clean-ul {
+  list-style-type: none;
+  padding: 0; }
+  ul.clean-ul li {
+    padding: 0; }
+
+table.tufte {
+  margin: auto;
+  border: none;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+  table.tufte thead {
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black; }
+    table.tufte thead td {
+      padding: 10px 15px; }
+  table.tufte tbody {
+    border-bottom: 2px solid black; }
+    table.tufte tbody td {
+      padding: 10px 15px;
+      vertical-align: top; }
+  table.tufte tr.startSection {
+    border-top: 1px solid black; }
+
+.grammar {
+  font-family: monospace;
+  color: black; }
+
+.terminal {
+  color: blue; }
+
+table.grammar {
+  margin: auto;
+  border: none; }
+  table.grammar td {
+    padding: 10px 15px;
+    vertical-align: top; }
+
+.fenced {
+  background-color: #cccccc;
+  text-align: left;
+  padding: 10px; }
+
+body {
+  background-color: #fffff2;
+  padding: 20px 5%;
+  font-family: 'Georgia', serif;
+  font-size: 15px;
+  line-height: 1.3em; }
+
+header, footer, div.header {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px; }
+  header ul, footer ul, div.header ul {
+    list-style-type: none;
+    padding: 0; }
+    header ul li, footer ul li, div.header ul li {
+      padding: 0; }
+  header dl, footer dl, div.header dl {
+    margin: 0; }
+    header dl dt, footer dl dt, div.header dl dt {
+      margin-top: 10px; }
+    header dl dd, footer dl dd, div.header dl dd {
+      margin-left: 0;
+      font-style: italic;
+      font-size: small; }
+
+a {
+  color: #990000;
+  text-decoration: none; }
+  a:hover {
+    color: #ff3333;
+    border-bottom: 1px dashed #ff3333; }
+
+img {
+  border: 1px solid #cccccc; }
+  img a {
+    color: black; }
+    img a:hover {
+      color: #990000;
+      border-bottom: none; }
+
+h1.title, main#syllabus > section h1, article#syllabus > section h1 {
+  color: #007799;
+  background-color: rgba(255, 255, 242, 0.05);
+  border-top: 1px solid #c5c4cd;
+  border-bottom: 1px solid #c5c4cd;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 3px 0px;
+  text-align: center;
+  font-size: 1em; }
+
+.big, section#info section#name ul > li:first-child {
+  font-size: x-large;
+  font-weight: bold;
+  color: black; }
+
+.dimmed {
+  opacity: .75; }
+
+.caption, main#teaching-page section#courses section#previous-courses ul > ul, dl.papers dd .paper-author, dl.papers dd .award, dl.papers dd ul.paper-resources {
+  font-style: italic;
+  font-size: small; }
+
+main#schedule-page section#schedule {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px;
+  margin-top: 20px; }
+  main#schedule-page section#schedule iframe.schedule {
+    width: 100%;
+    height: 600px; }
+    main#schedule-page section#schedule iframe.schedule div.calendar-container {
+      background-color: black; }
+
+body.front-page {
+  padding: 20px 15%;
+  margin-top: 7%; }
+
+header.front-page #picture {
+  text-align: right;
+  padding-right: 25px; }
+  header.front-page #picture img {
+    height: 200px; }
+  @media (max-width: 786px) {
+    header.front-page #picture {
+      text-align: center; } }
+header.front-page #info {
+  text-align: left;
+  padding-left: 25px; }
+  @media (max-width: 786px) {
+    header.front-page #info {
+      text-align: center; } }
+
+nav#front-nav {
+  margin: 30px 0; }
+  nav#front-nav section {
+    background-color: white;
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 0 0 5px #e5eefa;
+    -webkit-box-shadow: 0 0 5px #e5eefa;
+    box-shadow: 0 0 5px #e5eefa;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 0; }
+    nav#front-nav section a {
+      color: #007799; }
+      nav#front-nav section a:hover {
+        color: #990000;
+        border-bottom: none; }
+    nav#front-nav section nav {
+      font-size: 14px; }
+      nav#front-nav section nav ul {
+        list-style-type: none;
+        padding: 0; }
+        nav#front-nav section nav ul li {
+          padding: 0; }
+      nav#front-nav section nav li {
+        display: inline; }
+      nav#front-nav section nav li + li::before {
+        content: "・ "; }
+      nav#front-nav section nav a {
+        color: black; }
+        nav#front-nav section nav a:hover {
+          color: #990000;
+          border-bottom: none; }
+
+header.innerPage {
+  padding: 0; }
+  @media (max-width: 786px) {
+    header.innerPage #name {
+      text-align: center; } }
+  @media (max-width: 786px) {
+    header.innerPage #contact {
+      text-align: center; } }
+
+main#teaching-page {
+  margin: 30px 0; }
+  main#teaching-page ul {
+    list-style-type: none;
+    padding: 0; }
+    main#teaching-page ul li {
+      padding: 0; }
+  main#teaching-page dl {
+    margin: 0; }
+    main#teaching-page dl dt {
+      margin-top: 10px; }
+    main#teaching-page dl dd {
+      margin-left: 0;
+      font-style: italic;
+      font-size: small; }
+  main#teaching-page section#courses section#current-courses {
+    background-color: white;
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 0 0 5px #e5eefa;
+    -webkit-box-shadow: 0 0 5px #e5eefa;
+    box-shadow: 0 0 5px #e5eefa;
+    padding: 20px; }
+    main#teaching-page section#courses section#current-courses ul {
+      font-size: large;
+      line-height: 2;
+      font-style: italic; }
+      main#teaching-page section#courses section#current-courses ul a {
+        font-style: normal;
+        padding-right: 10px; }
+  main#teaching-page section#courses section#previous-courses {
+    background-color: white;
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 0 0 5px #e5eefa;
+    -webkit-box-shadow: 0 0 5px #e5eefa;
+    box-shadow: 0 0 5px #e5eefa;
+    padding: 20px; }
+    main#teaching-page section#courses section#previous-courses ul > li {
+      font-weight: bold; }
+    main#teaching-page section#courses section#previous-courses ul > ul {
+      margin-top: 0px; }
+      main#teaching-page section#courses section#previous-courses ul > ul ul {
+        list-style-type: none;
+        padding: 0; }
+        main#teaching-page section#courses section#previous-courses ul > ul ul li {
+          padding: 0; }
+      main#teaching-page section#courses section#previous-courses ul > ul li {
+        display: inline; }
+      main#teaching-page section#courses section#previous-courses ul > ul li + li::before {
+        content: "・ "; }
+      main#teaching-page section#courses section#previous-courses ul > ul li {
+        font-weight: normal; }
+  main#teaching-page section#schedule {
+    width: 48%;
+    margin: 0 1%;
+    /*@if $last_column == true {
+      padding-right: 0;
+      } @else {
+        padding-right: 20px;
+      }*/
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    background-color: white;
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 0 0 5px #e5eefa;
+    -webkit-box-shadow: 0 0 5px #e5eefa;
+    box-shadow: 0 0 5px #e5eefa;
+    padding: 20px;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 786px) {
+      main#teaching-page section#schedule {
+        width: 100%; } }
+    main#teaching-page section#schedule img {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      border: none; }
+
+header.course-page, div.course-page {
+  padding: 0; }
+  header.course-page #info, div.course-page #info {
+    width: 100%;
+    padding: 0 1%;
+    /*@if $last_column == true {
+      padding-right: 0;
+      } @else {
+        padding-right: 20px;
+      }*/
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    text-align: center; }
+    @media (max-width: 786px) {
+      header.course-page #info, div.course-page #info {
+        width: 100%; } }
+    header.course-page #info ul, div.course-page #info ul {
+      list-style-type: none;
+      padding: 0; }
+      header.course-page #info ul li, div.course-page #info ul li {
+        padding: 0; }
+    header.course-page #info li, div.course-page #info li {
+      display: inline; }
+    header.course-page #info li + li::before, div.course-page #info li + li::before {
+      content: "・ "; }
+    header.course-page #info h1, div.course-page #info h1 {
+      color: #007799; }
+      header.course-page #info h1 a, div.course-page #info h1 a {
+        color: #007799; }
+        header.course-page #info h1 a:hover, div.course-page #info h1 a:hover {
+          color: #990000;
+          border-bottom: none; }
+    header.course-page #info h2, div.course-page #info h2 {
+      color: #aaaaaa;
+      font-size: normal;
+      font-weight: normal; }
+
+.course-page main {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px;
+  margin-top: 20px; }
+
+.todo {
+  display: none; }
+
+table.schedule {
+  margin: auto;
+  border-spacing: 0px 5px;
+  border-collapse: separate;
+  /*
+  // http://elvery.net/demo/responsive-tables/
+  @media only screen and (max-width: 800px) {
+    thead {
+      display: none;
+    }
+
+    tr.week {
+      display: block;
+
+      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
+   
+      &.current {
+        opacity: 1;
+      }
+   
+      td {
+        font-size: small;
+
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+        white-space: normal;
+        text-align:left;
+
+        &.week-num {
+          display: none;
+        }
+
+        &.day1 {
+          border-right: 1px dotted $highlight-color;
+        }
+
+        &.day2 {
+          border-left: 1px dotted $highlight-color;
+        }
+      }
+
+
+    }
+  }*/ }
+  table.schedule thead {
+    font-weight: bold; }
+    table.schedule thead td.date {
+      text-align: center; }
+  table.schedule tr.week {
+   /*opacity: .3;
+
+   &:hover {
+     opacity: .8;
+   }
+
+   &.current {
+     opacity: 1;
+   }
+
+   &.current:hover {
+     opacity: 1;
+   }*/ }
+    table.schedule tr.week td {
+      padding: 10px 15px; }
+      table.schedule tr.week td.week-num {
+        text-align: center;
+        width: 4%; }
+      table.schedule tr.week td.date {
+        color: white;
+        background-color: #007799;
+        width: 6%;
+        padding: 0px 5px;
+        text-align: center;
+        font-size: small; }
+        table.schedule tr.week td.date dd,
+        table.schedule tr.week td.date dt {
+          display: inline;
+          margin: 0; }
+        table.schedule tr.week td.date dd + dd:before {
+          content: ', ';
+          /* add comma between definitions */ }
+        table.schedule tr.week td.date dt:after {
+          content: ':'; }
+        table.schedule tr.week td.date dt:before {
+          /* insert line break before <dt> */
+          content: "\A";
+          white-space: pre; }
+        table.schedule tr.week td.date dt:first-child:before {
+          /* disable line break before the first <dt> */
+          content: none; }
+      table.schedule tr.week td.day1 {
+        border: 1px solid rgba(0, 119, 153, 0.1);
+        border-left: none; }
+      table.schedule tr.week td.day2 {
+        border: 1px solid rgba(0, 119, 153, 0.1);
+        border-right: none;
+        text-align: right; }
+      table.schedule tr.week td.details {
+        width: 30%; }
+        table.schedule tr.week td.details ul {
+          list-style-type: none;
+          padding: 0; }
+          table.schedule tr.week td.details ul li {
+            padding: 0; }
+        table.schedule tr.week td.details li {
+          display: inline; }
+        table.schedule tr.week td.details li + li::before {
+          content: "・ "; }
+        table.schedule tr.week td.details ul {
+          font-size: small;
+          margin: 0;
+          font-style: italic; }
+      table.schedule tr.week td.allWeek {
+        border: 1px solid rgba(0, 119, 153, 0.1);
+        text-align: center; }
+      table.schedule tr.week td.assignment {
+        padding-left: 1%;
+        width: 25%; }
+        table.schedule tr.week td.assignment ul {
+          list-style-type: none;
+          padding: 0; }
+          table.schedule tr.week td.assignment ul li {
+            padding: 0; }
+        table.schedule tr.week td.assignment dl {
+          margin: 0; }
+          table.schedule tr.week td.assignment dl dt {
+            margin-top: 10px; }
+          table.schedule tr.week td.assignment dl dd {
+            margin-left: 0;
+            font-style: italic;
+            font-size: small; }
+        table.schedule tr.week td.assignment dl {
+          border-left: 2px solid rgba(0, 119, 153, 0.8);
+          padding-left: 10px; }
+          table.schedule tr.week td.assignment dl dd {
+            font-size: small; }
+
+main#syllabus > section, article#syllabus > section {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px;
+  margin-top: 20px; }
+  main#syllabus > section p, article#syllabus > section p {
+    width: 72%; }
+  main#syllabus > section ul, main#syllabus > section ol, main#syllabus > section dl, article#syllabus > section ul, article#syllabus > section ol, article#syllabus > section dl {
+    position: relative;
+    width: 100%; }
+    main#syllabus > section ul li, main#syllabus > section ul dt, main#syllabus > section ul dd, main#syllabus > section ol li, main#syllabus > section ol dt, main#syllabus > section ol dd, main#syllabus > section dl li, main#syllabus > section dl dt, main#syllabus > section dl dd, article#syllabus > section ul li, article#syllabus > section ul dt, article#syllabus > section ul dd, article#syllabus > section ol li, article#syllabus > section ol dt, article#syllabus > section ol dd, article#syllabus > section dl li, article#syllabus > section dl dt, article#syllabus > section dl dd {
+      width: 72%; }
+  main#syllabus > section aside, article#syllabus > section aside {
+    float: right;
+    line-height: 1.3em;
+    font-size: small;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 20%;
+    clear: both; }
+    main#syllabus > section aside p, article#syllabus > section aside p {
+      display: inline; }
+  main#syllabus > section ul, article#syllabus > section ul {
+    margin-top: 0; }
+    main#syllabus > section ul li, article#syllabus > section ul li {
+      padding: 0; }
+main#syllabus section#toc, article#syllabus section#toc {
+  text-align: center; }
+  main#syllabus section#toc ul, article#syllabus section#toc ul {
+    list-style-type: none;
+    padding: 0; }
+    main#syllabus section#toc ul li, article#syllabus section#toc ul li {
+      padding: 0; }
+  main#syllabus section#toc dl, article#syllabus section#toc dl {
+    margin: 0; }
+    main#syllabus section#toc dl dt, article#syllabus section#toc dl dt {
+      margin-top: 10px; }
+    main#syllabus section#toc dl dd, article#syllabus section#toc dl dd {
+      margin-left: 0;
+      font-style: italic;
+      font-size: small; }
+  main#syllabus section#toc p, article#syllabus section#toc p {
+    width: 100%; }
+  main#syllabus section#toc ul, article#syllabus section#toc ul {
+    width: 100%; }
+    main#syllabus section#toc ul li, article#syllabus section#toc ul li {
+      width: 100%;
+      font-size: large;
+      padding: 7px 0; }
+main#syllabus section#logistics ul, article#syllabus section#logistics ul {
+  list-style-type: none;
+  padding: 0; }
+  main#syllabus section#logistics ul li, article#syllabus section#logistics ul li {
+    padding: 0; }
+main#syllabus section#logistics dl, article#syllabus section#logistics dl {
+  margin: 0; }
+  main#syllabus section#logistics dl dt, article#syllabus section#logistics dl dt {
+    margin-top: 10px; }
+  main#syllabus section#logistics dl dd, article#syllabus section#logistics dl dd {
+    margin-left: 0;
+    font-style: italic;
+    font-size: small; }
+main#syllabus section#logistics ul li, article#syllabus section#logistics ul li {
+  padding: 7px; }
+main#syllabus section#logistics ul ul ul, article#syllabus section#logistics ul ul ul {
+  list-style-type: none;
+  padding: 0; }
+  main#syllabus section#logistics ul ul ul li, article#syllabus section#logistics ul ul ul li {
+    padding: 0; }
+main#syllabus section#logistics ul ul li, article#syllabus section#logistics ul ul li {
+  display: inline; }
+main#syllabus section#logistics ul ul li + li::before, article#syllabus section#logistics ul ul li + li::before {
+  content: "・ "; }
+main#syllabus section#logistics ul ul li, article#syllabus section#logistics ul ul li {
+  margin: 0;
+  padding: 0; }
+main#syllabus section#objectives ul, article#syllabus section#objectives ul {
+  list-style-type: none;
+  padding: 0; }
+  main#syllabus section#objectives ul li, article#syllabus section#objectives ul li {
+    padding: 0; }
+main#syllabus section#objectives dl, article#syllabus section#objectives dl {
+  margin: 0; }
+  main#syllabus section#objectives dl dt, article#syllabus section#objectives dl dt {
+    margin-top: 10px; }
+  main#syllabus section#objectives dl dd, article#syllabus section#objectives dl dd {
+    margin-left: 0;
+    font-style: italic;
+    font-size: small; }
+main#syllabus section#objectives ul ul, article#syllabus section#objectives ul ul {
+  margin-top: 5px;
+  margin-left: 30px;
+  list-style: outside; }
+  main#syllabus section#objectives ul ul li, article#syllabus section#objectives ul ul li {
+    padding-bottom: 10px; }
+main#syllabus section#accounts ul, article#syllabus section#accounts ul {
+  list-style-type: none;
+  padding: 0; }
+  main#syllabus section#accounts ul li, article#syllabus section#accounts ul li {
+    padding: 0; }
+main#syllabus section#accounts dl, article#syllabus section#accounts dl {
+  margin: 0; }
+  main#syllabus section#accounts dl dt, article#syllabus section#accounts dl dt {
+    margin-top: 10px; }
+  main#syllabus section#accounts dl dd, article#syllabus section#accounts dl dd {
+    margin-left: 0;
+    font-style: italic;
+    font-size: small; }
+main#syllabus section#grading dl dt, article#syllabus section#grading dl dt {
+  font-weight: bold;
+  margin-top: 10px; }
+main#syllabus section#grading dl dd, article#syllabus section#grading dl dd {
+  margin: 0;
+  padding: 0; }
+  main#syllabus section#grading dl dd ul, article#syllabus section#grading dl dd ul {
+    margin-top: 5px; }
+    main#syllabus section#grading dl dd ul li, article#syllabus section#grading dl dd ul li {
+      padding-bottom: 5px; }
+main#syllabus section#grading section#grading-notes ul, article#syllabus section#grading section#grading-notes ul {
+  list-style-type: none;
+  padding: 0; }
+  main#syllabus section#grading section#grading-notes ul li, article#syllabus section#grading section#grading-notes ul li {
+    padding: 0; }
+main#syllabus section#grading section#grading-notes dl, article#syllabus section#grading section#grading-notes dl {
+  margin: 0; }
+  main#syllabus section#grading section#grading-notes dl dt, article#syllabus section#grading section#grading-notes dl dt {
+    margin-top: 10px; }
+  main#syllabus section#grading section#grading-notes dl dd, article#syllabus section#grading section#grading-notes dl dd {
+    margin-left: 0;
+    font-style: italic;
+    font-size: small; }
+main#syllabus section#grading section#grading-notes ul ul, article#syllabus section#grading section#grading-notes ul ul {
+  margin-top: 5px;
+  margin-left: 30px;
+  list-style: outside; }
+  main#syllabus section#grading section#grading-notes ul ul li, article#syllabus section#grading section#grading-notes ul ul li {
+    padding-bottom: 10px; }
+main#syllabus section#honor-code li, article#syllabus section#honor-code li {
+  padding-bottom: 7px; }
+
+main#assignment, article#assignment {
+  font-family: 'Georgia';
+  font-size: large;
+  line-height: 1.3em;
+  margin-top: 20px; }
+  main#assignment pre, article#assignment pre {
+    background-color: white; }
+  main#assignment img, article#assignment img {
+    border: none; }
+  main#assignment h2, article#assignment h2 {
+    font-size: 1.5em;
+    color: #007799;
+    font-weight: normal;
+    border-top: 1px solid #c5c4cd;
+    border-bottom: 1px solid #c5c4cd;
+    margin-bottom: 10px;
+    padding: 10px 0px; }
+  main#assignment h3, article#assignment h3 {
+    margin-bottom: 0; }
+  main#assignment h3 + p, article#assignment h3 + p {
+    margin-top: 0; }
+  main#assignment li, article#assignment li {
+    margin: 5px 0; }
+  main#assignment .duedate, article#assignment .duedate {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold; }
+  main#assignment > section, article#assignment > section {
+    background-color: white;
+    border: 1px solid #cccccc;
+    -moz-box-shadow: 0 0 5px #e5eefa;
+    -webkit-box-shadow: 0 0 5px #e5eefa;
+    box-shadow: 0 0 5px #e5eefa;
+    padding: 20px;
+    margin-top: 20px; }
+    main#assignment > section p, article#assignment > section p {
+      width: 72%; }
+    main#assignment > section ul, main#assignment > section ol, main#assignment > section dl, article#assignment > section ul, article#assignment > section ol, article#assignment > section dl {
+      position: relative;
+      width: 100%; }
+      main#assignment > section ul li, main#assignment > section ul dt, main#assignment > section ul dd, main#assignment > section ol li, main#assignment > section ol dt, main#assignment > section ol dd, main#assignment > section dl li, main#assignment > section dl dt, main#assignment > section dl dd, article#assignment > section ul li, article#assignment > section ul dt, article#assignment > section ul dd, article#assignment > section ol li, article#assignment > section ol dt, article#assignment > section ol dd, article#assignment > section dl li, article#assignment > section dl dt, article#assignment > section dl dd {
+        width: 72%; }
+    main#assignment > section aside, article#assignment > section aside {
+      float: right;
+      line-height: 1.3em;
+      font-size: small;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      width: 20%;
+      clear: both; }
+      main#assignment > section aside p, article#assignment > section aside p {
+        display: inline; }
+    main#assignment > section ul, article#assignment > section ul {
+      margin-top: 0; }
+      main#assignment > section ul li, article#assignment > section ul li {
+        padding: 0; }
+    main#assignment > section dt, article#assignment > section dt {
+      margin-top: 10px; }
+  main#assignment section#toc, article#assignment section#toc {
+    text-align: center; }
+    main#assignment section#toc ul, article#assignment section#toc ul {
+      list-style-type: none;
+      padding: 0; }
+      main#assignment section#toc ul li, article#assignment section#toc ul li {
+        padding: 0; }
+    main#assignment section#toc dl, article#assignment section#toc dl {
+      margin: 0; }
+      main#assignment section#toc dl dt, article#assignment section#toc dl dt {
+        margin-top: 10px; }
+      main#assignment section#toc dl dd, article#assignment section#toc dl dd {
+        margin-left: 0;
+        font-style: italic;
+        font-size: small; }
+    main#assignment section#toc p, article#assignment section#toc p {
+      width: 100%; }
+    main#assignment section#toc ul, article#assignment section#toc ul {
+      width: 100%; }
+      main#assignment section#toc ul li, article#assignment section#toc ul li {
+        width: 100%;
+        font-size: large;
+        padding: 7px 0; }
+  main#assignment section#submission ul, article#assignment section#submission ul {
+    list-style-type: none;
+    padding: 0; }
+    main#assignment section#submission ul li, article#assignment section#submission ul li {
+      padding: 0; }
+  main#assignment section#submission dl, article#assignment section#submission dl {
+    margin: 0; }
+    main#assignment section#submission dl dt, article#assignment section#submission dl dt {
+      margin-top: 10px; }
+    main#assignment section#submission dl dd, article#assignment section#submission dl dd {
+      margin-left: 0;
+      font-style: italic;
+      font-size: small; }
+  main#assignment section#submission ul ul, article#assignment section#submission ul ul {
+    margin-top: 5px;
+    margin-left: 30px;
+    list-style: outside; }
+    main#assignment section#submission ul ul li, article#assignment section#submission ul ul li {
+      padding-bottom: 10px; }
+  main#assignment section#submission ul.submission-list > li, article#assignment section#submission ul.submission-list > li {
+    font-weight: bold;
+    padding-top: 10px; }
+  main#assignment section#submission ul.submission-list ul li, article#assignment section#submission ul.submission-list ul li {
+    padding: 0; }
+  main#assignment section#submission ul.submission-list li.optional, article#assignment section#submission ul.submission-list li.optional {
+    color: gray;
+    font-style: italic; }
+  main#assignment section#submission ul.submission-list li.optional:after, article#assignment section#submission ul.submission-list li.optional:after {
+    content: " (optional)"; }
+  main#assignment section#submission ul.optional > li, article#assignment section#submission ul.optional > li {
+    font-weight: bold;
+    padding-top: 10px; }
+  main#assignment section#submission ul.optional ul li, article#assignment section#submission ul.optional ul li {
+    padding: 0; }
+  main#assignment section#submission ul.optional li, article#assignment section#submission ul.optional li {
+    color: gray;
+    font-style: italic; }
+  main#assignment p, article#assignment p {
+    width: 72%; }
+  main#assignment ul, main#assignment ol, main#assignment dl, article#assignment ul, article#assignment ol, article#assignment dl {
+    position: relative;
+    width: 100%; }
+    main#assignment ul li, main#assignment ul dt, main#assignment ul dd, main#assignment ol li, main#assignment ol dt, main#assignment ol dd, main#assignment dl li, main#assignment dl dt, main#assignment dl dd, article#assignment ul li, article#assignment ul dt, article#assignment ul dd, article#assignment ol li, article#assignment ol dt, article#assignment ol dd, article#assignment dl li, article#assignment dl dt, article#assignment dl dd {
+      width: 72%; }
+  main#assignment aside, article#assignment aside {
+    float: right;
+    line-height: 1.3em;
+    font-size: small;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 20%;
+    clear: both; }
+    main#assignment aside p, article#assignment aside p {
+      display: inline; }
+  main#assignment .referenceNumber, main#assignment .footnote, main#assignment .reversefootnote, article#assignment .referenceNumber, article#assignment .footnote, article#assignment .reversefootnote {
+    color: #ff3333;
+    text-decoration: none; }
+  main#assignment .referenceNumber, article#assignment .referenceNumber {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em; }
+  main#assignment .footnote, article#assignment .footnote {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+    font-size: small; }
+
+/*main#syllabus {
+  & > section {
+    @include standout;
+    @include asides;
+    
+    margin-top: 20px;
+
+    ul {
+      margin-top: 0;
+      li {
+        padding: 0;
+      }
+    }
+
+  }
+
+  section#toc {
+    @include clean-lists;
+    //@include plainlink;
+
+    p {
+      width: 100%;
+    }
+    text-align: center;
+
+    ul {
+      width: 100%;
+
+      li {
+        width: 100%;
+        font-size: large;
+        padding: 7px 0;
+      }
+    }
+  }*/
+main#research-page > section {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px;
+  margin: 20px 0; }
+
+dl.papers dt a {
+  color: black; }
+  dl.papers dt a:hover {
+    color: #990000;
+    border-bottom: none; }
+dl.papers dd {
+  margin-bottom: 15px; }
+  dl.papers dd .paper-title a {
+    color: black; }
+    dl.papers dd .paper-title a:hover {
+      color: #990000;
+      border-bottom: none; }
+  dl.papers dd .award {
+    font-weight: bold;
+    padding: .25em; }
+  dl.papers dd ul {
+    list-style-type: none;
+    padding: 0; }
+    dl.papers dd ul li {
+      padding: 0; }
+  dl.papers dd li {
+    display: inline; }
+  dl.papers dd li + li::before {
+    content: "・ "; }
+  dl.papers dd ul.paper-resources {
+    margin: 0; }
+
+main#personal-page > section {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%; }
+  main#personal-page > section section.picture {
+    width: 25%;
+    padding: 0 1%;
+    /*@if $last_column == true {
+      padding-right: 0;
+      } @else {
+        padding-right: 20px;
+      }*/
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto; }
+    @media (max-width: 786px) {
+      main#personal-page > section section.picture {
+        width: 100%; } }
+    main#personal-page > section section.picture img {
+      width: 100%; }
+  main#personal-page > section section.info {
+    width: 75%;
+    padding: 0 1%;
+    /*@if $last_column == true {
+      padding-right: 0;
+      } @else {
+        padding-right: 20px;
+      }*/
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto; }
+    @media (max-width: 786px) {
+      main#personal-page > section section.info {
+        width: 100%; } }
+
+section#info section#name ul > li:first-child a {
+  color: black; }
+  section#info section#name ul > li:first-child a:hover {
+    color: #990000;
+    border-bottom: none; }
+section#info section {
+  margin: 0; }
+
+section#news {
+  background-color: white;
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 0 0 5px #e5eefa;
+  -webkit-box-shadow: 0 0 5px #e5eefa;
+  box-shadow: 0 0 5px #e5eefa;
+  padding: 20px; }
