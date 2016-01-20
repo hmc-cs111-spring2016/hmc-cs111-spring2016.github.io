@@ -14,6 +14,7 @@ categories: jekyll update
 [Scala doc]: http://www.scala-lang.org/documentation/
 [SftI]: http://www.horstmann.com/scala/index.html
 [LIP]: https://pragprog.com/book/tpdsl/language-implementation-patterns
+[DOET]: http://www.jnd.org/books/design-of-everyday-things-revised.html
 
 # About This Course
 
@@ -122,9 +123,14 @@ the submission due the subsequent Sunday and the critque due on Tuesday.
     use during the third week of class. There are lots of good online resources
     for [learning Scala][Scala doc].
 
-**Books:** There are two recommended books for the course. You don't *need* to buy either of them; but I recommend them because the each give the most bang for the buck in this class.
+**Books:** There are three recommended books for the course. You don't *need* to buy any of them; but I recommend them because the each give the most bang for the buck in this class.
 
    - _[Scala for the Impatient][SftI]_ by Cay Horstmann. This book is a good reference for the Scala programming language, which we'll be using a lot during the first half of the course. I'll point out parts of the book that might be useful for particular assignments.
+   - _[The Design of Everyday Things][DOET]_ by Donald A. Norman
+   This classic design book is mainly about the design of physical objects, but
+   many of the principles can be transferred to the design of programming
+   languages (and other software). It's a great read, and it will probably
+   change the way  you look at the world.
    - _[Language Implementation Patterns][LIP]_ by
     Terence Parr. This book is a great, general resource for implementing programming languages. It will be most useful to you during the second half of the course, as you work on your project. I won't give any assigned readings, but I might point you to parts of the book that I think will help with your project.
 
